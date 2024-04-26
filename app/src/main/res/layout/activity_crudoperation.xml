@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crudoperation">
+
+    <TextView
+        android:id="@+id/sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Sell Books:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="635dp"
+        android:background="@drawable/book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979"
+        tools:layout_editor_absoluteX="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="294dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/edittext_background"
+                android:ems="10"
+                android:hint="Book Name"
+                android:inputType="text"
+                android:textColor="#040404"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sell" />
+
+            <EditText
+                android:id="@+id/bookname"
+                android:layout_width="294dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="29dp"
+                android:background="@color/edittext_background"
+                android:ems="10"
+                android:hint="Book Name"
+                android:inputType="text"
+                android:textColor="#040404"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="294dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/edittext_background"
+                android:ems="10"
+                android:hint="Book Price"
+                android:inputType="text"
+                android:textColor="#020202"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bookname" />
+
+            <Button
+                android:id="@+id/insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/button_background_blue"
+                android:text="Insert"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price" />
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_background_blue"
+                android:text="Update"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/insert" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="58dp"
+                android:background="@drawable/button_background_blue"
+                android:text="Delete"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/update" />
+
+            <Button
+                android:id="@+id/display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/button_background_blue"
+                android:text="Display"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/delete" />
+
+            <TextView
+                android:id="@+id/displayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Books will be displayed here"
+                android:textAlignment="viewStart"
+                android:textColor="#FF1744"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/display" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

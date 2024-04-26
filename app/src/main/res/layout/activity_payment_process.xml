@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentProcess">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/loginText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Payment Process"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:drawablePadding="8dp"
+                    android:hint="Username"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="8dp"
+                    android:hint="Shipping Address"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Payment Method"
+                    android:textColor="#AEA8A8"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:layout_marginTop="1dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="136dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="12dp"
+                        app:srcCompat="@drawable/paytm" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="179dp"
+                        android:layout_height="39dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="39dp"
+                        android:layout_marginBottom="25dp"
+                        app:srcCompat="@drawable/vis" />
+
+                </RelativeLayout>
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="162dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Debit Card" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UPI" />
+
+                    <EditText
+                        android:id="@+id/editTextNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Card number      ....  ....  ....  ...."
+                        android:inputType="number" />
+
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Agree all details are correct"
+                    android:textColor="#EA80FC"
+                    android:textSize="15dp"
+                    android:textStyle="italic" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:text="Click to save details"
+                    android:textOff="details not saved"
+                    android:textOn="Entered details are saved" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#C411E3"
+                    android:text="Buy Book"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
