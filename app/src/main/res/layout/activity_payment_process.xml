@@ -162,11 +162,12 @@
                     android:textOn="Entered details are saved" />
 
                 <Button
-                    android:id="@+id/loginButton"
+                    android:id="@+id/buy"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
+                    android:background="@color/colorAccent"
                     android:backgroundTint="#C411E3"
                     android:text="Buy Book"
                     android:textSize="18sp" />

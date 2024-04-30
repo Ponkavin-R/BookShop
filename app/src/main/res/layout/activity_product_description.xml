@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDescription">
+
+    <!--    <Button-->
+    <!--        android:id="@+id/prevButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:text="Previous" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/nextButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:text="Next" />-->
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="0dp" />
+
+    <ImageButton
+        android:id="@+id/prevButton"
+        android:layout_width="83dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="356dp"
+        android:layout_toStartOf="@+id/nextButton"
+        android:background="@color/white"
+        android:src="@drawable/baseline_arrow_left_24"
+        tools:src="@drawable/baseline_arrow_left_24" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="74dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="361dp"
+        android:background="@color/white"
+        android:src="@drawable/baseline_arrow_right_24"
+        tools:src="@drawable/baseline_arrow_right_24" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="198dp"
+        android:layout_marginBottom="311dp"
+        android:text="Atomic Habit"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="194dp"
+        android:layout_marginBottom="267dp"
+        android:text="RS. 600"
+        android:textColor="#858080"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="364dp"
+        android:layout_height="161dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="91dp"
+        android:text="Atomic Habits presents a proven system for building good habits and breaking bad ones. The key to building lasting habits is focusing on creating a new identity first. Your current behaviors are simply a reflection of your current identity."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="19dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/buybook"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="35dp"
+        android:text="Buy Book" />
+
+</RelativeLayout>

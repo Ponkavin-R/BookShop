@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Get a reference to the Get Started button
         Button getStartedButton = findViewById(R.id.buttonGetStarted);
-
         // Set OnClickListener to the button
         getStartedButton.setOnClickListener(new View.OnClickListener() {
             @Override
