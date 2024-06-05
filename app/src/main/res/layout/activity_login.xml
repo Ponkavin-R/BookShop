@@ -35,9 +35,9 @@
                     android:layout_height="159dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="38dp"
                     android:layout_marginTop="3dp"
-                    android:layout_marginEnd="35dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_marginRight="35dp"
                     android:layout_toEndOf="@+id/textView4"
                     tools:srcCompat="@drawable/book" />
@@ -89,7 +89,7 @@
                 android:layout_marginTop="@dimen/loginViewsMargin"
                 android:background="@drawable/button_background_blue"
                 android:backgroundTint="#361DE9B6"
-                android:text="Login" />
+                android:text="Login " />
 
             <TextView
                 android:id="@+id/tlogin"
